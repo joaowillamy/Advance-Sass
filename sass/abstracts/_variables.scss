@@ -1,0 +1,26 @@
+// FONT
+$default-font-size: 1.6rem;
+
+//COLORS
+$color-black: #000;
+$color-white: #fff;
+$colors: (
+  primary: #00a9e7,
+  secondary: #09e3fe,
+  success: #37ff3b,
+  danger: #ee3426,
+  warning: #e4de33,
+  info: #00a9e7,
+  light: #eee,
+  dark: #444,
+);
+
+$text-length: (
+  'xs': .45rem,
+  'sm': .875rem,
+  'base': 1rem,
+  'md': 1.125rem,
+  'lg': 2.25rem,
+  'xl': 3.5rem
+);
+

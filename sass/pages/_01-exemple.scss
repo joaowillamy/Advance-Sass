@@ -1,0 +1,15 @@
+$colors: (
+  'primary': blue,
+  'secondary': red,
+  'default': white,  
+);
+
+@function get-color($layer) {
+  @return map-get($colors, $layer);
+};
+
+.color {
+  color: get-color('default');
+  background-color: get-color('secondary');
+  font-size: 50px;
+}

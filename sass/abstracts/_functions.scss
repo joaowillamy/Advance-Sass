@@ -1,0 +1,13 @@
+// Get value color in colors map
+@function get-color($color){
+  @return map-get($colors, $color);
+};
+
+//Dark or Light background to determine text color
+@function text-color($color) {
+  @if (lightness($color) > 50) {
+    @return get-color('dark');  // Lighter backgorund, return dark color
+  } @else {
+    @return get-color('light'); // Darker background, return light color
+  }
+}

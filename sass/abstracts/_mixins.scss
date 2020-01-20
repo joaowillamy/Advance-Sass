@@ -1,0 +1,28 @@
+//Bootstrap Button - Make Any Customizations Here
+@mixin colors-btns {
+    //Generates the class names via the $colors Map
+  @each $className in $colors {
+    
+    &--#{nth($className, 1)} {
+      $buttonColor: nth($className, 2);
+      background: $buttonColor;
+      color: text-color($buttonColor);
+      border-color: darken($buttonColor, 5%);
+    
+      &:hover {
+        background: lighten($buttonColor, 10%);
+        color: text-color(lighten($buttonColor, 10%));
+        border-color: $buttonColor;
+      }
+    }
+  }
+}
+
+@mixin btns-scale {
+  @each $element in $text-length {
+
+    &--#{nth($element, 1)} {
+      font-size: #{nth($element, 2)};
+    }
+  }
+}
